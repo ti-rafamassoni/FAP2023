@@ -1,0 +1,10 @@
+A partir da chegada dos 11 novos alunos a sala passou a ter a mesma quantidade tanto no grupo dos que gostam de matemática quanto no grupo dos que gostam de português: 18 alunos de cada;
+O professor organizou a sala, agora com 36 estudantes, em nove blocos quadrados, cada um contendo quatro alunos;
+Considerando, agora, a configuração da sala em blocos de quatro alunos, observamos que temos três linhas horizontais contendo três blocos de alunos, cada;
+E aí conseguimos identificar um padrão: considerando a primeira linha horizontal de blocos, o professor, no primeiro bloco da linha colocou três alunos do grupo de português e um de
+matemática, no segundo bloco colocou três alunos de matemática e um de portugues, e no terceiro bloco colocou dois alunos de cada grupo;
+Na linha logo abaixo ele seguiu o mesmo raciocínio, apenas deslocando os blocos para a esquerda - o terceiro bloco da primeira linha tem a mesma configuração que o segundo bloco da segunda
+linha, o segundo bloco da primeira linha tem a mesma configuração que o primeiro bloco da segunda linha e o primeiro bloco da primeira linha passa a ser igual ao último bloco da segunda 
+linha;
+O mesmo padrão se aplica na transição da segunda linha de blocos quadrados de estudantes para a terceira e última linha; 
+Então, o professor conhecendo o padrão que ele definiu na distribuição dos alunos, consegue identificar a quebra do mesmo com a mudança de posição dos alunos, na imagem 03.
