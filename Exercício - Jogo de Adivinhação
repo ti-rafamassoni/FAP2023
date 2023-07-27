@@ -2,20 +2,20 @@ var palpite = 0
 var premiado = 0
 var cont = 0
 
-premiado = Math.floor(Math.random() * (101 - 1 + 1) + 1);
+premiado = Math.floor((Math.random() * 101)) + 1;
 console.log(premiado);
 
 for (let i = 1; i <=5; i++){
   palpite = parseInt(prompt("Digite um número entre 1 e 100: "));
     if (palpite > premiado){
       console.log("Palpite muito alto. Tente novamente");
-      cont++
       } else if (palpite < premiado){
         console.log("Palpite muito baixo. Tente novamente");
-        cont++;
       } else {
-        cont++;
-        console.log("ACERTOU!!! Você chegou ao número correto em " + cont + " tentativas");
+        console.log("ACERTOU!!! Você chegou ao número correto em " + i + " tentativas");
         break;
       }
+    if (i == 5){
+      console.log("Você chegou ao número total de tentativas");
+    }
 }
