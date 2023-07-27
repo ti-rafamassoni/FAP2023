@@ -14,10 +14,8 @@ for (let i = 1; i <=5; i++){
         console.log("Palpite muito baixo. Tente novamente");
         cont++;
       } else {
-        console.log("ACERTOU!!!");
         cont++;
+        console.log("ACERTOU!!! Você chegou ao número correto em " + cont + " tentativas");
         break;
       }
 }
-
-console.log("Você usou " + cont + " tentativas");
