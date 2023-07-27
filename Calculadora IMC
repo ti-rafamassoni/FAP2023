@@ -22,9 +22,10 @@ imc = peso / (altura * altura);
     console.log("IMC de " + nome + " = " + imc + " - Obesidade");
   }
 contador++
-somaImc =+
+somaImc += imc
 
 } while(peso != 0 && altura !=0);
 
-console.log("Você calculou o IMC de " + contador - 1 + " pessoas");
-console.log("Média entre os IMCs calculados: " + somaImc);
+contador = contador-1
+console.log("Você calculou o IMC de " + contador + " pessoas");
+console.log("Média entre os IMCs calculados: " + (somaImc / (contador)).toFixed(2));
