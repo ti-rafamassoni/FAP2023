@@ -1,0 +1,27 @@
+let peso = 0.0
+let altura = 0.0
+let nome = ""
+let imc = 0.0
+let contador = 0
+
+console.log("Calculadora de IMC");
+
+do {
+nome = prompt("Digite o nome do paciente: ");
+peso = parseFloat(prompt("Digite o peso em quilogramas: "));
+altura = parseFloat(prompt("Digite a altura em metros: "));
+imc = peso / (altura * altura);
+  if (imc <= 18.5) { 
+    console.log("IMC de " + nome + " = " + imc + " - Baixo Peso");
+  } else if (imc > 18.5 && imc <= 25) {
+      console.log("IMC de " + nome + " = " + imc + " - Normal");
+  } else if (imc > 25 && imc <= 30) {
+      console.log("IMC de " + nome + " = " + imc + " - Sobrepeso");
+  } else if (imc > 30){
+    console.log("IMC de " + nome + " = " + imc + " - Obesidade");
+  }
+contador++
+} while(peso != 0 && altura !=0);
+
+console.log(contador - 1);
+
