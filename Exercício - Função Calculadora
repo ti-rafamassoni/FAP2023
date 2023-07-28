@@ -1,0 +1,22 @@
+alert("Calculadora de operações básicas. Digite as informações a seguir")
+let num1 = 0.0
+let num2 = 0.0
+let operacao = 0
+function calculadora(num1, num2, operacao){
+  if (operacao === 1) {
+  return (num1 + num2);
+  } else if (operacao === 2) {
+  return (num1 - num2);
+  } else if (operacao === 3) {
+  return (num1 * num2);
+  } else if (operacao === 4) {
+  return (num1 / num2);
+  } else {
+  return("Operação Inválida");
+  }
+}
+num1 = parseFloat(prompt("Digite o primeiro número: "));
+num2 = parseFloat(prompt("Digite o segundo número: "));
+operacao = parseInt(prompt("Digite a operação desejada: \n Para somar, digite 1 \n Para subtrair, digite 2 \n Para multiplicar, digite 3 \n Para dividir, digite 4"));
+let resultado = calculadora(num1, num2, operacao);
+alert(resultado);
