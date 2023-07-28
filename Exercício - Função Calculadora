@@ -11,12 +11,15 @@ function calculadora(num1, num2, operacao){
   return (num1 * num2);
   } else if (operacao === 4) {
   return (num1 / num2);
-  } else {
-  return("Operação Inválida");
   }
 }
 num1 = parseFloat(prompt("Digite o primeiro número: "));
 num2 = parseFloat(prompt("Digite o segundo número: "));
+do {
 operacao = parseInt(prompt("Digite a operação desejada: \n Para somar, digite 1 \n Para subtrair, digite 2 \n Para multiplicar, digite 3 \n Para dividir, digite 4"));
+  if (operacao > 4) {
+  alert("Operação Inválida. Tente novamente");
+  }
+} while (operacao > 4);
 let resultado = calculadora(num1, num2, operacao);
 alert(resultado);
