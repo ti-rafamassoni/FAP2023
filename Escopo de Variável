@@ -1,13 +1,13 @@
-var minhaVariavel = "global";
-minhaOutraVariavel = "global";
+var minhaVariavel = "global1";
+minhaOutraVariavel = "global2";
 
 function minhaFuncao() {
-  var minhaVariavel = "local";
+  var minhaVariavel = "local1";
   return minhaVariavel;
 }
 
 function minhaOutraFuncao() {
-  minhaOutraVariavel = "local";
+  minhaOutraVariavel = "local2";
   return minhaOutraVariavel;
 }
 
