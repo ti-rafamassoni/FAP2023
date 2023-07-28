@@ -1,35 +1,16 @@
-alert("Calculadora de operações básicas. Digite as informações a seguir")
+  
 let num1 = 0.0
 let num2 = 0.0
 let operacao = 0
 
 function menu_operacoes(){
 operacao = parseInt(prompt("Digite o número da operação desejada: \n 1 - Soma \n 2 - Subtração \n 3 - Multiplicação \n 4 - Divisão \n 0 - Sair"));
-return = operaca
 }
+menu_operacoes();
+if (operacao >=0 && operacao <=4){
 
-operacao = menu_operacoes();
-  while (operacao < 0 && operacao > 4){
-    alert("Essa opção não existe");
-    menu_operacoes();
-}
-  
 
-function calculadora(num1, num2, operacao){
-  if (operacao === 1) {
-  return (num1 + num2);
-  } else if (operacao === 2) {
-  return (num1 - num2);
-  } else if (operacao === 3) {
-  return (num1 * num2);
-  } else if (operacao === 4) {
-  return (num1 / num2);
-  } else {
-  return (0);
-  }
-}
-num1 = parseFloat(prompt("Digite o primeiro número: "));
-num2 = parseFloat(prompt("Digite o segundo número: "));
-operacao = parseInt(prompt("Digite a operação desejada: \n Para somar, digite 1 \n Para subtrair, digite 2 \n Para multiplicar, digite 3 \n Para dividir, digite 4"));
-let resultado = calculadora(num1, num2, operacao);
-alert(resultado);
+
+do {
+operacao = parseInt(prompt("Digite o número da operação desejada: \n 1 - Soma \n 2 - Subtração \n 3 - Multiplicação \n 4 - Divisão \n 0 - Sair"));
+} while (operacao >= 0 && operacao <= 4);
