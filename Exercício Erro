@@ -2,7 +2,6 @@ let nome = ""
 let ano_nasc = 0
 let idade = 0
 let ano_correto = false
-
 alert("Calculadora de idade. Coloque suas informações a seguir");
 nome = prompt("Digite seu nome: ");
 while(ano_correto == false){
@@ -12,6 +11,6 @@ while(ano_correto == false){
     }else {
     alert("Ano inválido. Tente novamente.");
     }
-  }
+   }
 idade = 2023 - ano_nasc;
 alert(nome + " completou (ou completará) " + idade + " anos em 2023.");
