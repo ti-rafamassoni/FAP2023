@@ -1,0 +1,17 @@
+let nome = ""
+let ano_nasc = 0
+let idade = 0
+let ano_correto = false
+
+alert("Calculadora de idade. Coloque suas informações a seguir");
+nome = prompt("Digite seu nome: ");
+while(ano_correto == false){
+  ano_nasc = parseInt(prompt("Digite o ano de seu nascimento, entre 1922 e 2022: "));
+    if(ano_nasc >= 1922 && ano_nasc <= 2022){
+    ano_correto = true;
+    }else {
+    alert("Ano inválido. Tente novamente.");
+    }
+  }
+idade = 2023 - ano_nasc;
+alert(nome + " completou (ou completará) " + idade + " anos em 2023.");
