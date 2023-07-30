@@ -1,0 +1,32 @@
+let x = 0;
+let y = 0;
+let z = 0;
+let nulo = 0;
+let voto = 0;
+let voto_correto = false;
+let continuar = 0;
+
+alert("Eleições. Escoha seu candidato");
+function eleicoes(){
+while(voto_correto == false){
+voto = parseInt(prompt("Digite o número correspondente ao candidato escolhido:\n Candidato X: 889\n Candidato Y: 847\n Candidato Z: 515\n Se quiser anular seu voto digite qualquer outro número"));
+  if(voto == 889){
+  x++;
+  }else if (voto == 847){
+  y++;
+  }else if (voto == 515){
+  z++
+  }else if (isNaN(voto)){
+  alert("Voto inválido");  
+  }else{
+  nulo++  
+  }
+continuar = parseInt(prompt("Deseja encerrar a votação? Digite o número correspondente à opção escohida:\n 1 - Sim\n 2 - Não");
+  if (continuar = 1){
+  voto_correto = true;
+  }else{
+  continue;
+}
+}
+
+eleicoes();
