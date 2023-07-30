@@ -2,9 +2,7 @@ var num_alunos = 0
 var idade = 0
 var menor = 200
 var seg_menor = 200
-
 num_alunos = Number(prompt("Digite a quantidade de alunos da turma: "));
-
 for(var i = 1; i <= num_alunos; i++){
 	idade = Number(prompt("Digite a idade do aluno " + i));
       	if(idade < menor){
@@ -12,10 +10,7 @@ for(var i = 1; i <= num_alunos; i++){
         menor = idade  
       	} else if(idade < seg_menor){
         seg_menor = idade
-        }
-  
-      
+        }   
 }
-
 console.log("Menor idade :" + menor);
 console.log("Segunda menor idade: " + seg_menor);
