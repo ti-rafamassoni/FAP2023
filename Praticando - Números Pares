@@ -1,0 +1,14 @@
+let num
+do{
+num = parseInt(prompt("Digite um número par: "));
+if(isNaN(num) == false){
+  if(num % 2 === 0){
+  alert("O número " + num + " é par");
+  }else{
+  alert("O número " + num + " é ímpar. Digite novamente");
+  }
+}else {
+alert("Você digitou um caractere. Tente novamente");
+}
+}while (num % 2 != 0 || isNaN(num) == true);
+  
