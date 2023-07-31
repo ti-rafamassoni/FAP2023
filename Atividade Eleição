@@ -7,7 +7,6 @@ let voto_correto = false;
 let continuar = 0;
 
 alert("Eleições. Escoha seu candidato");
-function eleicoes(){
 while(voto_correto == false){
 voto = parseInt(prompt("Digite o número correspondente ao candidato escolhido:\n Candidato X: 889\n Candidato Y: 847\n Candidato Z: 515\n Se quiser anular seu voto digite qualquer outro número"));
   if(voto == 889){
@@ -17,16 +16,27 @@ voto = parseInt(prompt("Digite o número correspondente ao candidato escolhido:\
   }else if (voto == 515){
   z++
   }else if (isNaN(voto)){
-  alert("Voto inválido");  
+  alert("Voto inválido");
+  continue;
   }else{
   nulo++  
   }
-continuar = parseInt(prompt("Deseja encerrar a votação? Digite o número correspondente à opção escohida:\n 1 - Sim\n 2 - Não");
-  if (continuar = 1){
+continuar = parseInt(prompt("Deseja encerrar a votação? Digite o número correspondente à opção escohida:\n 1 - Sim\n 2 - Não"));
+  if (continuar ==1){
   voto_correto = true;
-  }else{
-  continue;
+  }else if(continuar == 2){
+  voto_correto = false;
 }
+}
+if (x > y && x > z){
+alert("X é o candidato vencedor");
+} else if (y > x && y > z){
+alert("Y é o candidato vencedor");
+}else if (z > x && z > x){
+alert("Z é o candidato vencedor");
+}else{
+alert("Houve um empate ou todos os votos foram nulos");
 }
 
-eleicoes();
+alert("Votos para cada candidato:\n Candidato X: " + x + "\n Candidato Y: " + y + "\n Candidato Z: " + z + "\n Votos nulos: " + nulo); 
+
