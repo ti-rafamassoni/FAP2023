@@ -1,3 +1,4 @@
+\\ PRIMEIRA OPÇÃO
 let numeros_pares = []
 
 for(let i = 0; i <= 100; i++){
@@ -7,6 +8,7 @@ for(let i = 0; i <= 100; i++){
 }
 console.log(numeros_pares.join(" , "));
 
+\\ SEGUNDA OPÇÃO
 let numeros_pares = []
 let i = 0;
 
@@ -18,6 +20,7 @@ while(i >= 0 && i<= 100){
 }
 console.log(numeros_pares.join(" , "));
 
+\\ TERCEIRA OPÇÃO
 let numeros_pares = [];
 let i = 0;
 
