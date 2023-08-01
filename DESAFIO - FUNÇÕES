@@ -1,0 +1,14 @@
+// FUNÇÃO QUE SOMA TODOS OS NÚMEROS INTEIROS ANTES DO NÚMERO DECLARADO
+
+let int = 0
+let resultado = 0;
+
+function soma_numeros(param1){
+  var n = param1;
+  var soma = 0;
+  for(let i = 1; i <= n; i++){
+  soma += i;
+  }
+  return soma;
+ }
+int = parseInt(prompt("Digite um número inteiro: ");
