@@ -24,7 +24,7 @@ let maior = parseInt(Math.max(...entre_inteiros));
 console.log(maior);
 
 // TESTE PARA EXIBIR ITENS DO ARRAY
-console.log(entre_inteiros.join);
+console.log(entre_inteiros.join(" , "));
 
 for(let elemento of entre_inteiros){
 soma += elemento
