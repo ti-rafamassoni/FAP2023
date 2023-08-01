@@ -19,8 +19,12 @@ if(int_maior === int1){
 i = 0;
 }
 
+// TESTE PARA VER COMO FUNCIONA CALCULAR O MAIOR ENTRE OS ITENS DO ARRAY
 let maior = parseInt(Math.max(...entre_inteiros));
 console.log(maior);
+
+// TESTE PARA EXIBIR ITENS DO ARRAY
+console.log(entre_inteiros.join);
 
 for(let elemento of entre_inteiros){
 soma += elemento
