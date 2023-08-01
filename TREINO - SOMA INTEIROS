@@ -19,6 +19,9 @@ if(int_maior === int1){
 i = 0;
 }
 
+let maior = parseInt(Math.max(...entre_inteiros));
+console.log(maior);
+
 for(let elemento of entre_inteiros){
 soma += elemento
 }
