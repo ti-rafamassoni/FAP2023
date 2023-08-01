@@ -1,0 +1,30 @@
+let salario = 0.0;
+let perc_reajuste = 0.0;
+let valor_reajuste = 0.0;
+let novo_salario = 0.0;
+
+function calc_salario(salario, perc_reajuste){
+valor_reajuste = salario * (perc_reajuste/100);
+novo_salario = salario + valor_reajuste;
+alert("Percentual de Reajuste: " + perc_reajuste + "%\nValor de Reajuste: R$ " + valor_reajuste.toFixed(2) + "\nSalário Reajustado: R$ " + novo_salario.toFixed(2));
+}
+
+do{
+salario = parseFloat(prompt("Digite o valor do seu salário atual: "));
+if(isNaN(salario) || salario < 0){
+alert("Entrada Inválida. Digite novamente.");
+}
+}while(isNaN(salario) || salario < 0);
+if(salario <= 280){
+perc_reajuste = 20;
+calc_salario(salario, perc_reajuste);
+}else if (salario > 280 && salario <= 700){
+perc_reajuste = 15;
+calc_salario(salario, perc_reajuste);
+}else if (salario > 700 && salario <= 1500){
+perc_reajuste = 10;
+calc_salario(salario, perc_reajuste);
+}else{
+perc_reajuste = 5;
+calc_salario(salario, perc_reajuste);
+}
