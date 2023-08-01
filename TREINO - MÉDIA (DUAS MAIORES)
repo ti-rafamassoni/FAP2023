@@ -1,0 +1,36 @@
+let nota1 = 0.0;
+let nota2 = 0.0;
+let nota3 = 0.0;
+let maior_nota = 0.0;
+let segmaior_nota = 0.0;
+let media = 0.0;
+let resultado = "";
+
+function obtervalida(mensagem){
+let nota = 0.0
+do{
+nota = parseFloat(prompt(mensagem));
+if(isNaN(nota) || nota < 0 || nota > 10){
+alert("Entrada Inválida. Digite novamente");
+}
+}while (isNaN(nota) || nota < 0 || nota > 10)
+return nota;
+}
+nota1 = obtervalida("Digite a primeira nota (0 a 10): ");
+nota2 = obtervalida("Digite a segunda nota (0 a 10): ");
+nota3 = obtervalida("Digite a terceira nota (0 a 10): ");
+maior_nota = Math.max(nota1, nota2, nota3);
+  if (maior_nota == nota1){
+  segmaior_nota = Math.max(nota2, nota3);
+  }else if(maior_nota == nota2){
+  segmaior_nota = Math.max(nota1, nota3);
+  }else{
+  segmaior_nota = Math.max(nota1, nota2);
+  }
+media = (maior_nota + segmaior_nota)/2;
+  if(media < 3){
+  alert(" Média " + media + " - Reprovado direto");
+  }else if(media >= 3 && media < 7){
+  alert(" Média " + media + " - Prova Final");
+  }else
+  alert(" Média " + media + " - Aprovado");
