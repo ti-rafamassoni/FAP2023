@@ -1,0 +1,34 @@
+matriz = [ 
+    ["Jose",5.5,7.9,7.1],
+    ["Lucia",7.0,3.5,9.0],
+    ["Pedro",8.6,7.3,8.8]
+   ];
+
+function imprimeMatriz(matriz) {
+  for (var l = 0; l<matriz.length; l++) {
+    for (var c = 0; c<matriz[l].length; c++) {
+      console.log(matriz[l][c]);
+
+    }
+  }
+  
+}
+
+function calculaMediaLinha(linha) {
+  var soma = 0
+  for (var l = 1; l<linha.length; l++) {
+    soma = soma +linha[l]; 
+  }
+  return soma/(linha.length-1);
+}
+
+
+imprimeMatriz(matriz);
+
+
+for (var l = 0; l<matriz.length; l++) {
+  console.log("Media de " + matriz[l][0] + 
+              " = " + calculaMediaLinha(matriz[l]));
+     
+  
+}
