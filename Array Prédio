@@ -3,8 +3,10 @@ let predio = [
 [4,4,6,3], // Moradores 2o Andar: Apartamentos 1, 2, 3 e 4;
 [8,1,3,3]  // Moradores 3o Andar: Apartamentos 1, 2, 3 e 4.
 ]
+console.log(predio);
   for(var andar = 0; andar < predio.length; andar++){
-    for(var apartamento = 0; apartamento < predio[andar].length; apartamento++){
-    console.log(predio[andar][apartamento]);
+    for(var apart = 0; apart < predio[andar].length; apart++){
+    console.log(predio[andar]);
+    console.log(predio[andar][apart]);
     }
   }
