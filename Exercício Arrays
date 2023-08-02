@@ -1,0 +1,11 @@
+var pessoas = ["Rafa", "Giovani", "Frutuoso", "Fabia", "Genesio", "Carlos", "Paulo", "Aretusa", "Iana", "Cristina"];
+var idades = [42,38,70,50,60,52,55,28,44,63];
+var cores = ["azul", "verde","amarelo","rosa","cinza","preto","branco","vermelho","laranja","roxo"];
+
+console.log(pessoas);
+console.log(idades);
+console.log(cores);
+cores.splice(6,1,"marrom");
+idades.splice(0,1,44);
+console.log(cores);
+console.log(idades);
