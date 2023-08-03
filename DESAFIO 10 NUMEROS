@@ -1,0 +1,42 @@
+// Faça um programa em JS que leia um 10 números e verifique se existem valores iguais e os escreva na tela.
+
+var numeros = [];
+var num;
+
+for(var i = 0; i<10; i++){
+  var num = parseInt(prompt("Digite um número inteiro: "));
+   if(numeros.includes(num)) {
+  alert(num + " é um número repetido.")
+  }
+numeros.push(num);
+}
+console.log(numeros);
+
+// OUTRA FORMA:
+
+var numeros = [];
+var num;
+
+for(var i = 0; i<10; i++){
+  var num = parseInt(prompt("Digite um número inteiro: "));
+    if(numeros.indexOf(num) !== -1) {   // indexOf dá o resultado -1 se ele não encontra o item dentro do array
+  alert(num + " é um número repetido.")
+  }
+numeros.push(num);
+}
+console.log(numeros);
+
+// AGORA ELIMINANDO A POSSIBILIDADE DE INCLUIR NUMEROS REPETIDOS NO ARRAY NUMEROS;
+
+var numeros = [];
+var num;
+
+for(var i = 0; i<10; i++){
+  num = parseInt(prompt("Digite um número inteiro: "));
+   
+  while (numeros.indexOf(num) !== -1) {   // indexOf dá o resultado -1 se ele não encontra o item dentro do array
+    num = prompt("Número repetido. Digite outro");
+  }
+numeros [i] = num;
+}
+console.log(numeros);
