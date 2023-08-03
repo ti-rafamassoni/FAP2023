@@ -1,0 +1,11 @@
+var animais = [
+["Lulu","Cachorro",8],
+["Sara","Gato",15],
+["João","Papagaio",20]
+]
+
+for(var a = 0; a < animais.length; a++){
+  for(var c = 0; c < animais[a].length; c++){
+    console.log(animais[a][c]);
+  }
+}
