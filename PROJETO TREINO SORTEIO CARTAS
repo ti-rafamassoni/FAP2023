@@ -3,8 +3,10 @@ carta2 = 0;
 pessoa1 = "";
 pessoa2 = "";
 
+// TENTANDO SIMPLIFICAR COM FUNÇÕES
 function inteiro_aleatorio(min,max){
-Math.floor(Math.random() * cartas.length);
+return Math.floor(Math.random() * (max - min + 1) + min);
+}
 let cartas = [
 [1,2,3,4,5,6,7,8,9,10,11,12,13],
 [1,2,3,4,5,6,7,8,9,10,11,12,13],
@@ -14,10 +16,10 @@ let cartas = [
 pessoa1 = prompt("Digite o nome do primeiro participante: ");
 pessoa2 = prompt("Digite o nome do segundo participante: ");
 while(true){
-  linha1 = Math.floor(Math.random() * cartas.length);
-  linha2 = Math.floor(Math.random() * cartas.length);
-  coluna1 = Math.floor(Math.random() * cartas[0].length);
-  coluna2 = Math.floor(Math.random() * cartas[0].length);
+  linha1 = inteiro_aleatorio(1,cartas.length);
+  linha2 = inteiro_aleatorio(1,cartas.length);
+  coluna1 = inteiro_aleatorio(1,cartas[0].length);
+  coluna2 = inteiro_aleatorio(1,cartas[0].length);
   carta1 = cartas[linha1][coluna1];
   carta2 = cartas[linha2][coluna2];
   alert(pessoa1 + " tirou a carta " + carta1 + " e " + pessoa2 + " tirou a carta " + carta2);
