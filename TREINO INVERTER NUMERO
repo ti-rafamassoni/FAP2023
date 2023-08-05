@@ -1,0 +1,13 @@
+// Escreva uma função que mostre na tela um número fornecido pelo usuário, porém invertido.
+// Por exemplo, o usuário fornece o número 875 e a função mostra na tela o número 578.
+
+var numero = 0;
+var numero_invertido = 0;
+
+function inverter(numero){
+numero_invertido = numero.split("").reverse().join("");
+return parseInt(numero_invertido);
+}
+numero = prompt("Digite um número com pelo menos dois algarismos:");
+resultado = inverter(numero);
+alert(resultado);
