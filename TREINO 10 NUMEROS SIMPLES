@@ -1,0 +1,11 @@
+var entrada = 0;
+var lista = [];
+
+for(var i = 0; i < 10; i++){
+  entrada = parseInt(prompt("Digite um número: "));
+  while(isNaN(entrada) || lista.indexOf(entrada) != -1){
+    entrada = parseInt(prompt("Número repetido ou não é válido. Digite outro"));
+  }
+  lista.push(entrada);
+}
+console.log(lista);
