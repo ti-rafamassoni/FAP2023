@@ -1,0 +1,17 @@
+var palavra = ""
+var caractere = ""
+var contador = 0
+
+function contar_caracteres(palavra,caracter){
+  for(i = 0; i <= palavra.length; i++){
+    if(palavra[i] === caracter){
+    contador++;
+    }
+  }
+return contador;
+}
+palavra = prompt("Digite uma palavra:");
+caracter = prompt("Digite o caracter que você deseja contar na palavra:");
+contar_caracteres(palavra,caracter);
+console.log(contador);
+
