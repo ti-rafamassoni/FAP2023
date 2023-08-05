@@ -1,0 +1,17 @@
+// Escreva uma função que permita contar o número de vogais contidas em uma string fornecida
+// pelo usuário. Por exemplo, o usuário informa a string “Beterraba”, e a função retorna o número
+// 4 (há 4 vogais nessa palavra).
+
+var contador = 0;
+var vogais = ["a","e","i","o","u"];
+function contar_vogais(palavra){
+  for(var i = 0; i < palavra.length; i++){
+    if(vogais.includes(palavra[i].toLowerCase())){
+    contador++;
+    }
+  }
+  return contador;
+}
+palavra = prompt("Digite uma palavra:");
+resultado = contar_vogais(palavra);
+alert("A palavra " + palavra + " tem " + resultado + " vogais.");
