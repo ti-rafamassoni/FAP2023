@@ -1,0 +1,21 @@
+// Digamos que o número de chinchilas de uma fazenda triplica a cada ano, após o primeiro ano. Elaborar um programa que leia o número
+//inicial de chinchilas e anos e informe ano a ano o número médio previsto de chinchilas da fazenda. Validar a entrada para que o número 
+//inicial de chinchilas seja maior ou igual a 2 (um casal)
+
+var populacao = 0;
+var anos = 0;
+
+populacao = parseInt(prompt("Digite o número inicial de Chinchilas na fazenda:"));
+while(populacao < 2){
+populacao = parseInt(prompt("O número inicial deve ser maior ou igual a 2. Digite novamente:"));
+}
+anos = parseInt(prompt("Digite o número de anos para o cálculo do aumento da população das Chinchilas:"));
+for(var i = 0; i <= anos; i++){
+  if(i === 0){
+  console.log("População Inicial = " + inicial);
+  }else{
+  populacao = populacao * 3;
+  console.log("Ano " + i + " = " + populacao);  
+  }
+}
+  
