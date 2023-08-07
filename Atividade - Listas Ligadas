@@ -1,0 +1,61 @@
+// IMPLEMENTAÇÃO CLASSE NÓ
+class No{
+  constructor(nome){
+    this.nome = nome;
+    this.proximo = null;
+  }
+}
+
+// IMPLEMENTAÇÃO LISTA LIGADA
+
+class ListaLigada {
+  constructor(filhos){
+    this.cabeca = null
+  }
+addFirst(nome){
+  const newNo = new No(nome);
+  newNo.proximo = this.cabeca;
+}
+addLast(nome){
+  const newNo = new No(nome);
+  if(!this.cabeca){
+    this.cabeca = newNo;
+  }else {
+    let atual = this.cabeca;
+  while(atual.proximo){
+    atual = atual.proximo;
+  }
+  atual.proximo = newNo;
+  }
+}
+removeFirst(){
+  if(!this.cabeca){
+    return null;
+  }
+  const removedNo = this.cabeca;
+  this.cabeca = this.cabeca.proximo;
+  removedNo.proximo = null;
+  return removedNo.nome;
+  }
+ display() {
+    const values = [];
+    let atual = this.cabeca;
+    while (atual) {
+      values.push(atual.nome);
+      atual = atual.proximo;
+    }
+  console.log(values);
+  }  
+}
+const filhos = new ListaLigada ();
+filhos.addFirst("Rafael");
+filhos.addFirst("Wagner");
+filhos.addFirst("Natale");
+filhos.display();
+
+
+
+
+
+  
+    
