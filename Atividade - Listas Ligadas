@@ -15,6 +15,7 @@ class ListaLigada {
 addFirst(nome){
   const newNo = new No(nome);
   newNo.proximo = this.cabeca;
+  this.cabeca = newNo;
 }
 addLast(nome){
   const newNo = new No(nome);
