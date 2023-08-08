@@ -1,58 +1,34 @@
-// IMPLEMENTAÇÃO CLASSE NÓ
-class No{
-  constructor(nome){
+class Pessoa {
+  constructor(nome, idade, filho = null) {
     this.nome = nome;
-    this.proximo = null;
+    this.idade = idade;
+    this.filho = filho;
   }
 }
 
-// IMPLEMENTAÇÃO LISTA LIGADA
+// Criando as pessoas
+const pessoa1 = new Pessoa("Wagner", 77);
+const pessoa2 = new Pessoa("Mirna", 68);
+const pessoa3 = new Pessoa("Tiago", 45);
+const pessoa4 = new Pessoa("Débora", 44);
 
-class ListaLigada {
-  constructor(filhos){
-    this.cabeca = null
+// Definindo a relação de pais e filhos
+pessoa1.filho = pessoa3;
+pessoa2.filho = pessoa4;
+
+// Criando a lista encadeada
+pessoa1.next = pessoa2;
+pessoa2.next = null;  // Último elemento
+
+// Percorrendo e exibindo a lista encadeada
+let current = pessoa1;
+while (current !== null) {
+  console.log(`Nome: ${current.nome}, Idade: ${current.idade}`);
+  if (current.filho) {
+    console.log(`  Filho: ${current.filho.nome}`);
   }
-addFirst(nome){
-  const newNo = new No(nome);
-  newNo.proximo = this.cabeca;
-  this.cabeca = newNo;
+  current = current.next;
 }
-addLast(nome){
-  const newNo = new No(nome);
-  if(!this.cabeca){
-    this.cabeca = newNo;
-  }else {
-    let atual = this.cabeca;
-  while(atual.proximo){
-    atual = atual.proximo;
-  }
-  atual.proximo = newNo;
-  }
-}
-removeFirst(){
-  if(!this.cabeca){
-    return null;
-  }
-  const removedNo = this.cabeca;
-  this.cabeca = this.cabeca.proximo;
-  removedNo.proximo = null;
-  return removedNo.nome;
-  }
- display() {
-    const values = [];
-    let atual = this.cabeca;
-    while (atual) {
-      values.push(atual.nome);
-      atual = atual.proximo;
-    }
-  console.log(values);
-  }  
-}
-const filhos = new ListaLigada ();
-filhos.addFirst("Rafael");
-filhos.addFirst("Wagner");
-filhos.addFirst("Natale");
-filhos.display();
 
 
 
