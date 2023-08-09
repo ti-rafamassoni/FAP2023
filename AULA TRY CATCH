@@ -1,0 +1,21 @@
+function validarNumero(numero) {
+  while(true){
+	numero = prompt("Digite um número:");
+    try {	
+      if(numero == "") {
+		  throw "Campo Vazio";
+      } if (isNaN(numero)){
+      throw "Não é um número";
+      } if (numero < 0){
+      throw "Número negativo";
+      } 
+      break;    
+    } catch (err) {
+    alert("Exceção: " + err)
+    } finally {
+    console.log("Número passou por validação");
+    }
+  }
+}
+
+validarNumero(numero);
