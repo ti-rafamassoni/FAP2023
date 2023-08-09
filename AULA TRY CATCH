@@ -1,3 +1,4 @@
+let numero = 0;
 function validarNumero(numero) {
   while(true){
 	numero = prompt("Digite um número:");
