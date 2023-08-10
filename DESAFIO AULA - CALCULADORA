@@ -1,0 +1,20 @@
+function soma(n1,n2) {
+ return n1 + n2;
+}
+function subtracao(n1,n2) {
+  return n1 - n2;
+}
+let opcao = "";
+const OPERACOES = {
+SOMA:1,
+SUBTRACAO:2
+}
+ do {
+  opcao = prompt("1 - Soma\n2 - Subtrair\nx - Sair");
+
+  switch (opcao) {
+    case OPERACOES.SOMA:
+
+    case OPERACOES.SUBTRACAO:
+} while(opcao!= "x");
+
