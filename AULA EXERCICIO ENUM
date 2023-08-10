@@ -1,0 +1,39 @@
+const Cores = {
+VERMELHO:1,
+AZUL:2,
+AMARELO:3,
+LARANJA:4,
+VERDE:5,
+ROXO:6
+}
+
+function obterCorSecundaria(c1, c2){
+ try{
+  if(c1 != Cores.VERMELHO && c1 != Cores.AZUL && c1 != Cores.AMARELO){
+  throw "Cor 1 inválida";
+  }
+  if(c2 != Cores.VERMELHO && c2 != Cores.AZUL && c2 != Cores.AMARELO){
+  throw "Cor 2 inválida";
+  }
+  if ((c1 == Cores.VERMELHO && c2 == Cores.AZUL) || (c1 == Cores.AZUL && c2 == Cores.VERMELHO)){
+  return Cores.ROXO;
+  }
+  if ((c1 == Cores.VERMELHO && c2 == Cores.AMARELO) || (c1 == Cores.AMARELO && c2 == Cores.VERMELHO)){
+  return Cores.LARANJA;
+  }
+  if ((c1 == Cores.AMARELO && c2 == Cores.AZUL) || (c1 == Cores.AZUL && c2 == Cores.AMARELO)){
+  return Cores.VERDE;
+  }
+  } catch(err) {
+  console.log(err);
+  }
+}
+
+console.log(obterCorSecundaria(Cores.AZUL, Cores.AMARELO));
+
+
+
+
+
+
+
