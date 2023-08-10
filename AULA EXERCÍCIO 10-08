@@ -9,9 +9,7 @@ function dividir(num1,num2){
 	}
 }
 
-let num1 = 10;
-let num2 = 0;
-resultado = dividir(num1,num2);
+resultado = dividir(8,4);
 console.log(resultado);
 
 // COLOCO TODAS AS EXECUÇÕES DA FUNÇÃO NO TRY. CASO DÊ ALGUM ERRO NESSA EXECUÇÃO, VAI CAIR NO CATCH
