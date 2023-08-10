@@ -1,0 +1,19 @@
+function dividir(num1,num2){
+	num1 = parseFloat(prompt("Digite o número a ser dividido:"));
+	while(true){
+	num2 = parseFloat(prompt("Digite o número dividendo:"));
+	try {
+		if(num2 == 0){
+		throw "Divisão por zero não é permitida";
+		}
+		break
+	}catch{
+		console.log(err.message);
+	}
+	}
+	resultado = num1 / num2;
+	return resultado
+}
+
+dividir();
+console.log(resultado);
