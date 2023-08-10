@@ -1,0 +1,29 @@
+const DaysofWeek = {
+SUNDAY:0,
+MONDAY:1,
+TUESDAY:2,
+WEDNESDAY:3,
+THURSDAY:4,
+FRIDAY:5,
+SATURDAY:6
+}
+
+console.log(DaysofWeek);
+
+for (let linha in DaysofWeek){
+  console.log(linha, DaysofWeek[1]);
+}
+
+// LINHA IMPRIME AS INFORMAÇÕES DA ESQUERDA (DIAS DA SEMANA).
+// DAYSOFWEEK[LINHA] IMPRIME OS NÚMEROS.
+
+EXEMPLO 2:
+
+const pessoa = {
+NOME:"Jonh",
+IDADE:50,
+SEXO:"Masculino",
+STATUS:"Ativo"
+}
+
+console.log(pessoa);
