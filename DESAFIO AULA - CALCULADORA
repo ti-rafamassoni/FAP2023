@@ -6,15 +6,26 @@ function subtracao(n1,n2) {
 }
 let opcao = "";
 const OPERACOES = {
+SAIR:0,
 SOMA:1,
 SUBTRACAO:2
 }
  do {
-  opcao = prompt("1 - Soma\n2 - Subtrair\nx - Sair");
+  opcao = parseInt(prompt("1 - Soma\n2 - Subtrair\n0 - Sair"));
+   if(opcao != 0){
+    n1 = parseInt(prompt("Digite n1"));
+    n2 = parseInt(prompt("Digite n2"));
+ }
 
   switch (opcao) {
     case OPERACOES.SOMA:
-
+     resultado = soma(n1,n2);
+     console.log(n1 + " + " + n2 + " = " + resultado);
     case OPERACOES.SUBTRACAO:
-} while(opcao!= "x");
+     resultado = subtracao(n1,n2);
+     console.log(n1 + " - " + n2 + " = " + resultado);
+}
+} while(opcao!= 0);
+
+
 
